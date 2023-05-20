@@ -1,0 +1,195 @@
+/*Estilos generales*/
+*{
+    margin:0px;
+    padding:0px;
+}
+body{
+    background-color: #519E8A;
+    color: #ECBEB4;
+    font: 500 14px 'Pathway Extreme', sans-serif;
+}
+
+section {
+    border-radius: 2px;
+}
+
+div {
+    padding: 10px;
+}
+
+h2, h3 {
+    text-align: center;
+    padding: 10px;
+    color: #519E8A;
+    font-weight: 500;
+}
+
+h2 {
+    font-size: 2.4em;
+}
+
+h3 {
+    font-size: 1.2em;
+}
+
+
+p {
+    font-size: 1em;
+}
+
+footer {
+    text-align: center;
+}
+
+/* Zona Navbar */
+#navbar{
+    position:fixed;
+    width: 100%;
+    height: 50px;
+    background-color: #304A4E;
+    border-bottom: 1px solid white;
+    padding-top: 10px;
+    text-align: center;
+    
+}
+#navbar ul{
+    list-style-type: none;
+}
+#navbar ul li {
+    padding-top: 12px;
+    display: inline;
+    margin-right: 10px;
+    font-size: 18px; 
+}
+
+a{
+    text-decoration: none;
+}
+a:any-link{
+    color:#519E8A;
+}
+a:-webkit-any-link {
+    color:#519E8A;
+}
+a:-moz-any-link {
+    color:
+    #519E8A;
+}
+a:hover{
+    color: #ECBEB4;
+}
+
+/* Coloreo de zonas */
+#navbar, #descripcion, #audiovisual, #contacto {
+    background-color: #476A6F;
+    color: #C5C9A4;
+}
+
+#presentacion h2,#quienes-somos h2, #clientes h2{
+    color: #476A6F;
+}
+
+/* Diseño flex */
+#presentacion, #perfiles {
+    display: flex;
+    flex-direction: row;
+}
+
+#perfiles {
+    text-align: center;
+    justify-content: space-around;
+}
+
+#presentacion {
+    padding-top: 50px;
+}
+
+#presentacion img {
+    padding: 0px;
+    margin: 0px;
+}
+
+/* Diseño grid */
+#cajasdescripcion, #cajasclientes  {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+}
+
+#cajasdescripcion .objdescripcion {
+    justify-self: center;
+}
+
+#cajasdescripcion img {
+    border-radius: 5px;
+}
+
+#cajavideo, #contacto {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+#cajavideo iframe {
+    justify-self: center;
+    border-radius: 5px; 
+}
+
+/* Alinaciones y márgenes */
+.objdescripcion {
+    text-align: center;
+    width: 60%;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+}
+
+.imagen-perfil {
+    border-radius: 50%;
+}
+
+.objcliente {
+    text-align: center;
+}
+
+.objcliente h4 {
+    padding-top: 10px;
+}
+
+/*Formulario*/
+#contacto {
+    padding-bottom: 2%;
+}
+
+#cajacontacto {
+    justify-self: center;
+    background-color: #ECBEB4;
+    border-radius: 10px;
+    width: 600px;
+}
+
+.itemform {
+    display: grid;
+    grid-template-columns: 150px 350px;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.itemform label {
+    color: #476A6F;
+}
+
+.itemform input, .itemform textarea {
+    border-radius: 5px;
+    border: 1px solid white;
+}
+
+input[type="submit"] {
+    background-color: #476A6F;
+    border: 1px solid #519E8A;
+    color: #ECBEB4;
+    padding: 10px;
+    grid-column: 2/3;
+    justify-self: end;
+}
+
+
+
